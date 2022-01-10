@@ -1,0 +1,5 @@
+.label-prize::before {
+  content: '*';
+  color: #ff0000;
+  margin-right: 4px;
+}
