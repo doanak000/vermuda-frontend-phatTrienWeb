@@ -68,7 +68,6 @@ const QrCodeList = (props) => {
                       <WrapperQRCode>
                         <NameEventQR>
                           {/* {truncate(listOfCode[0]?.name)} */}
-                          <ImageQrCodeList src={QrCodeTitle}></ImageQrCodeList>
                           {`${listOfCodeItemSerialCode.code}`}
                         </NameEventQR>
                         <QRCode
@@ -112,7 +111,7 @@ const QrCodeList = (props) => {
                     {/* <NameEventQR>{truncate(listOfCode[0]?.name)}</NameEventQR> */}
                     <NameEventQR>
                       {/* {truncate(`QR: ${listOfCodeItemSerialCode.code}`)} */}
-                      <ImageQrCodeList src={QrCodeTitle}></ImageQrCodeList>
+                      
                       <TextQr>{` ${listOfCodeItemSerialCode.code}`}</TextQr>
                     </NameEventQR>
                     <QRCode
@@ -130,7 +129,7 @@ const QrCodeList = (props) => {
                       // style={{ transform: 'scale(0.9,0.9)' }}
                     />
                     <DateQR>
-                      <ImageQrCodeList src={QrDate}></ImageQrCodeList>
+                      
                       {` ${moment(listOfCodeItemSerialCode.expDate).format(
                         'YYYY.MM.DD'
                       )}`}
